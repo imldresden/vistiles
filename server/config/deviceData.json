@@ -1,0 +1,74 @@
+{
+  "deviceData": {
+    "nexus7": {
+      "name": "Asus Nexus 7",
+      "size": {
+        "height": 20.0,
+        "width": 11.4
+      },
+      "dpi": 323,
+      "borders": {
+        "top": 2.2,
+        "right": 0.85,
+        "bottom": 2.2,
+        "left": 0.85
+      }
+    },
+    "nexus5": {
+      "name": "LG Nexus 5",
+      "size": {
+        "height": 13.78,
+        "width": 6.92
+      },
+      "dpi": 445,
+      "borders": {
+        "top": 1.2,
+        "right": 0.3,
+        "bottom": 1.4,
+        "left": 0.3
+      }
+    },
+    "lgg3": {
+      "name": "LG G3",
+      "size": {
+        "height": 14.63,
+        "width": 7.46
+      },
+      "dpi": 534,
+      "borders": {
+        "top": 1.2,
+        "right": 0.3,
+        "bottom": 1.4,
+        "left": 0.3
+      }
+    },
+    "venue8": {
+      "name": "Dell Venue 8",
+      "size": {
+        "height": 21.58,
+        "width": 12.44
+      },
+      "dpi": 359,
+      "borders": {
+        "top": 0.6,
+        "right": 0.6,
+        "bottom": 2.9,
+        "left": 0.6
+      }
+    },
+    "tango": {
+      "name": "Project Tango",
+      "size": {
+        "height": 16.63,
+        "width": 11.98
+      },
+      "dpi": 323,
+      "borders": {
+        "top": 1.8,
+        "right": 2.2,
+        "bottom": 1.9,
+        "left": 2.2
+      }
+    }
+  }
+}

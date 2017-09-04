@@ -1,0 +1,27 @@
+{
+  "data": {
+    "dataSet": "worldBank",
+    "database": {
+      "fileName": "storage/dataset-db.sqlite",
+      "tables": {
+        "attributes": "Attributes",
+        "data": "Data",
+        "objects": "Objects"
+      }
+    },
+    "worldBank": {
+      "attributesColumn": "Series",
+      "attributesSchema": "../../../data/worldBank/series-metadata-schema.json",
+      "attributesSource": "data/worldBank/series-metadata.csv",
+      "dataSchema": "../../../data/worldBank/data-schema.json",
+      "dataSource": "data/worldBank/data.csv",
+      "objectsColumn": "Country",
+      "objectsSchema": "../../../data/worldBank/country-metadata-schema.json",
+      "objectsSource": "data/worldBank/country-metadata.csv",
+      "parseOptions": {
+        "columns": true,
+        "skip_empty_lines": true
+      }
+    }
+  }
+}

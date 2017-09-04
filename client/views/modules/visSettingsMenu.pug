@@ -1,0 +1,36 @@
+doctype html
+
+div.vis-settings-menu
+  div.container
+    div.row
+      div.col.s12
+        ul#tabs.tabs
+          li.tab.col.s4
+            a(href='#tab-default') Objects
+    div.row
+      div#tab-container.col.s12
+        div#tab-default
+          div#vis-settings-categories
+            h6 Categories
+          div#configuration
+            h6 Configuration
+            form(action='#')
+              fieldset.tab-settings-fieldset
+                div.tab-settings-checkerDiv.switch
+                  label
+                    input(type='checkbox', checked, disabled).vis-settings-checkbox
+                    span.lever
+                    p.vis-settings-paragraph Show Axis Labels
+                  br
+                div.tab-settings-checkerDiv.switch
+                  label
+                    input(type='checkbox', checked, disabled).vis-settings-checkbox
+                    span.lever
+                    p.vis-settings-paragraph Show Axis Labels
+                    br
+                div.tab-settings-checkerDiv.switch
+                  label
+                    input(type='checkbox', disabled).vis-settings-checkbox
+                    span.lever
+                    p.vis-settings-paragraph Colorblind Mode
+                    br

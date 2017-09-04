@@ -1,0 +1,135 @@
+{
+  "Series": {
+    "csvName": "Series Code",
+    "type": "TEXT"
+  },
+  "Country": {
+    "csvName": "Country Code",
+    "type": "TEXT"
+  },
+  "Year1991": {
+    "csvName": "1991 [YR1991]",
+    "appName": "1991",
+    "type": "REAL"
+  },
+  "Year1992": {
+    "csvName": "1992 [YR1992]",
+    "appName": "1992",
+    "type": "REAL"
+  },
+  "Year1993": {
+    "csvName": "1993 [YR1993]",
+    "appName": "1993",
+    "type": "REAL"
+  },
+  "Year1994": {
+    "csvName": "1994 [YR1994]",
+    "appName": "1994",
+    "type": "REAL"
+  },
+  "Year1995": {
+    "csvName": "1995 [YR1995]",
+    "appName": "1995",
+    "type": "REAL"
+  },
+  "Year1996": {
+    "csvName": "1996 [YR1996]",
+    "appName": "1996",
+    "type": "REAL"
+  },
+  "Year1997": {
+    "csvName": "1997 [YR1997]",
+    "appName": "1997",
+    "type": "REAL"
+  },
+  "Year1998": {
+    "csvName": "1998 [YR1998]",
+    "appName": "1998",
+    "type": "REAL"
+  },
+  "Year1999": {
+    "csvName": "1999 [YR1999]",
+    "appName": "1999",
+    "type": "REAL"
+  },
+  "Year2000": {
+    "csvName": "2000 [YR2000]",
+    "appName": "2000",
+    "type": "REAL"
+  },
+  "Year2001": {
+    "csvName": "2001 [YR2001]",
+    "appName": "2001",
+    "type": "REAL"
+  },
+  "Year2002": {
+    "csvName": "2002 [YR2002]",
+    "appName": "2002",
+    "type": "REAL"
+  },
+  "Year2003": {
+    "csvName": "2003 [YR2003]",
+    "appName": "2003",
+    "type": "REAL"
+  },
+  "Year2004": {
+    "csvName": "2004 [YR2004]",
+    "appName": "2004",
+    "type": "REAL"
+  },
+  "Year2005": {
+    "csvName": "2005 [YR2005]",
+    "appName": "2005",
+    "type": "REAL"
+  },
+  "Year2006": {
+    "csvName": "2006 [YR2006]",
+    "appName": "2006",
+    "type": "REAL"
+  },
+  "Year2007": {
+    "csvName": "2007 [YR2007]",
+    "appName": "2007",
+    "type": "REAL"
+  },
+  "Year2008": {
+    "csvName": "2008 [YR2008]",
+    "appName": "2008",
+    "type": "REAL"
+  },
+  "Year2009": {
+    "csvName": "2009 [YR2009]",
+    "appName": "2009",
+    "type": "REAL"
+  },
+  "Year2010": {
+    "csvName": "2010 [YR2010]",
+    "appName": "2010",
+    "type": "REAL"
+  },
+  "Year2011": {
+    "csvName": "2011 [YR2011]",
+    "appName": "2011",
+    "type": "REAL"
+  },
+  "Year2012": {
+    "csvName": "2012 [YR2012]",
+    "appName": "2012",
+    "type": "REAL"
+  },
+  "Year2013": {
+    "csvName": "2013 [YR2013]",
+    "appName": "2013",
+    "type": "REAL"
+  },
+  "Year2014": {
+    "csvName": "2014 [YR2014]",
+    "appName": "2014",
+    "type": "REAL"
+  },
+  "Year2015": {
+    "csvName": "2015 [YR2015]",
+    "appName": "2015",
+    "type": "REAL"
+  }
+}

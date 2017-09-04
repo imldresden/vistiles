@@ -1,0 +1,71 @@
+#tile-setup {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  visibility: hidden;
+}
+
+div#tile-setup-container {
+  width: 95%;
+
+  div#list-of-techniques {
+    padding-bottom: 2rem;
+    div.col {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      text-align: center;
+      button {
+        background: none;
+        border: none;
+        display: block;
+        padding: 0.75rem 0;
+        img {
+          width: 45%;
+        }
+        span.name {
+          display: block;
+        }
+      }
+      button.selected {
+        background: #eee;
+      }
+      &:first-child {
+        text-align: left;
+      }
+    }
+/*    div.view.col {
+      border-left: 1px solid #999;
+    }
+    div.view.col ~ div.view.col {
+      border-left: none;
+    }*/
+  }
+
+  div.start-container {
+    span {
+      margin-top: .25rem;
+    }
+  }
+
+  div#time-slider-container {
+    padding-top: 5em;
+    margin-top: 0;
+    margin-bottom: 100px;
+
+    #year-selector {
+    }
+
+    #year-selector + label {
+      top: 0;
+
+      span {
+        font-size: 150%;
+        padding-left: .5em;
+      }
+    }
+  }
+}

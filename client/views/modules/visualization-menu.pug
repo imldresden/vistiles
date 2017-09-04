@@ -1,0 +1,13 @@
+div#visMenu
+  ul
+    li.icon-li
+      img(class='responsive-img view-icon',src=viewIcon)
+    each icon, id in icons
+      if icon.type === 'button'
+        li.button-li
+          a(id=id, class='btn ' + icon.colorClass + (icon.enabled === undefined ? "" : " " + icon.enabled))= icon.title
+            i.material-icons.left= icon.materialIcon
+      else if icon.type === 'checkbox'
+        li.checkbox-li
+          input(id=id, class='filled-in', type='checkbox', name=id)
+          label(for=id)= icon.title

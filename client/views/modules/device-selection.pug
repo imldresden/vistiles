@@ -1,0 +1,13 @@
+//
+   Created by Tom Horak on 31.03.16.
+doctype html
+div.valign-wrapper
+  div.valign.center
+    h4= strings.title
+    form#deviceSelection
+      div.input-field
+        select#deviceSelectionField(required)
+          each name, id in devices
+            option(value=id)= name
+        label= strings.selectionLabel
+      button#wizardButton.btn-large.green(type='submit')= strings.submit

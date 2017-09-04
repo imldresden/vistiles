@@ -1,0 +1,36 @@
+div.modal-content
+  div.row
+    div.col-12
+      h4 Change Workspace
+
+  div.row
+    div.col-12
+      h5 Switch to a different workspace
+
+    div.col-12#workspaceRadioList
+      each val, index in data
+        p
+          if (device.workspaceId == index)
+            input(name="group", type="radio", id=index, disabled)
+          else
+            input(name="group", type="radio", id=index)
+
+          if (index == "workspace-0")
+            label(for=index)= val.color + " master (devices: " + val.devices.length + ")"
+          else
+            label(for=index)= val.color + " (devices: " + val.devices.length + ")"
+
+    div.col-12
+      p
+        a.waves-effect.waves-light.btn-large.disabled#changeWorkspaceBtn
+          i.material-icons.left swap_horiz
+          span switch
+
+  div.row
+    div.col-12
+      h5 Create a new workspace
+    div.col-12
+      p
+        a.waves-effect.waves-light.btn-large#createWorkspaceBtn
+          i.material-icons.left library_add
+          span create new

@@ -1,0 +1,5 @@
+ul#combinationList(data-from=data.from)
+  each val, i in data.combinations
+    li.combination(data-combination=i, data-source=data.from, data-target=val.target, class=val.triggered && 'disabled')
+      img.menu-icon(src="static/img/menu-icons/" + val.icon, width="26px", height="26px")
+      p(class="position-" + data.position)=(val.label)

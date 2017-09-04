@@ -1,0 +1,13 @@
+//
+   Created by blu on 19.04.16.
+doctype html
+
+div.fixed-action-btn.click-to-toggle.horizontal.menu
+  a.btn-floating.btn-large.toggle
+    i#menuIcon.large.mdi-navigation-menu
+    i#syncIcon.large.material-icons sync
+  ul
+    each icon, id in icons
+      li
+        a(id=id, class='btn-floating ' + icon.colorClass)
+          i.material-icons.medium= icon.materialIcon

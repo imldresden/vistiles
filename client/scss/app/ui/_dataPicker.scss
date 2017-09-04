@@ -1,0 +1,45 @@
+#data-list {
+
+  margin: 0;
+
+  .collection-header {
+    i.material-icons {
+      color: color('teal', 'lighten-1');
+      background-color: color('blue-grey', 'lighten-5');
+
+      font-size: 18px;
+      line-height: 42px;
+      text-align: center;
+      width: 42px;
+      height: 42px;
+      float: left;
+      margin-right: 15px;
+    }
+    span.bold{
+      font-weight: bold;
+    }
+  }
+  .collection-item {
+    display: inline-block;
+    width: 100%;
+
+    .type, .size {
+      color: color('grey', 'lighten-1');
+      font-size: small;
+    }
+    .name {
+      display: block;
+    }
+
+    button {
+      margin: 1rem 0 0 1rem;
+
+      &#SKIP {
+        background-color: color('brown', 'lighten-2');
+      }
+    }
+    span.skip {
+      font-style: italic;
+    }
+  }
+}

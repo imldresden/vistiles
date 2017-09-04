@@ -1,0 +1,54 @@
+$objectGroupColors: (
+        #a6cee3,
+        #1f78b4,
+        #b2df8a,
+        #33a02c,
+        #fb9a99,
+        #e31a1c,
+        #fdbf6f,
+        #ff7f00,
+        #cab2d6,
+        #6a3d9a
+);
+
+@for $i from 1 through length($objectGroupColors) {
+  $colorCode: nth($objectGroupColors, $i);
+  .object.group-#{$i - 1} {
+    fill: $colorCode;
+  }
+  .groupBackground-#{$i - 1} {
+    background-color: $colorCode;
+  }
+
+  .groupBackgroundLight-#{$i - 1} {
+    background-color: lighten($colorCode, 15%);
+  }
+}
+
+@for $i from 1 through length($objectGroupColors) {
+  $colorCode: nth($objectGroupColors, $i);
+  .object.group-#{$i - 1}-stroke {
+    stroke: $colorCode;
+  }
+}
+
+@for $i from 1 through length($objectGroupColors) {
+  $colorCode: nth($objectGroupColors, $i);
+  .country.group-#{$i - 1} {
+    stroke: $colorCode;
+  }
+}
+
+@for $i from 1 through length($objectGroupColors) {
+  $colorCode: nth($objectGroupColors, $i);
+  .value.group-#{$i - 1} {
+    fill: $colorCode;
+  }
+}
+
+@for $i from 1 through length($objectGroupColors) {
+  $colorCode: nth($objectGroupColors, $i);
+  .d3-tip.group-#{$i - 1} {
+    border-color: $colorCode;
+  }
+}

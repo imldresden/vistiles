@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "diagnostics": true,
+    "pretty": true,
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "../build/server"
+  }
+}

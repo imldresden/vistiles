@@ -1,0 +1,18 @@
+doctype html
+
+div.row
+  each mandatory in mandatoryMappings
+    div.input-field.col.m6.s12(id='input-'+mandatory)
+      select.mandatory-dimensions(data-dimension=mandatory)
+        option(value='') Please select a data dimension ...
+        each dim, id in availableDataDimensions
+          option(value=id)= dim.Name
+      label= mandatory
+div.row
+  each optional in optionalMappings
+    div.input-field.col.m6.s12(id='input-' + optional)
+      select.optional-dimensions(data-dimension=optional)
+        option(value='') Please select a data dimension ...
+        each dim, id in availableDataDimensions
+          option(value=id)= dim.Name
+      label= optional+' (Optional)'

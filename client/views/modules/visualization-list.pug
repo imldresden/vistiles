@@ -1,0 +1,31 @@
+//
+   Created by Tom Horak on 12.04.16.
+doctype html
+
+ul#visualizations.list.collection.with-header
+  li.collection-header
+    h5= strings.title
+  each visualization, id in visualizations
+    li.collection-item.avatar(id='vis-' + id)
+      div
+        i.material-icons.circle= visualization.icon
+        span.title= visualization.name
+        if visualization.optional.length > 0
+          p.info= strings.items.info + visualization.mandatory.join(', ') + ', (' + visualization.optional.join(', ') + ')'
+        else
+          p.info= strings.items.info + visualization.mandatory.join(', ')
+        button.secondary-content.btn(id=id)
+          i.material-icons.right navigate_next
+          span= strings.items.next
+
+ul#other-views.list.collection.with-header
+  li.collection-header
+    h5= strings.titleOtherViews
+  each view, id in otherViews
+    li.collection-item.avatar(id='view-'+id)
+      div
+        i.material-icons.circle= view.icon
+        span.title= view.name
+        button.secondary-content.btn(id=id)
+          i.material-icons.right navigate_next
+          span= strings.items.next

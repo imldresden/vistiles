@@ -1,0 +1,26 @@
+#device-list {
+  width: 420px;
+  display: inline-block;
+  float: right;
+
+  .collection-item {
+    .material-icons {
+      margin-right: 0.25rem;
+    }
+    .id {
+      color: color('grey', 'lighten-1');
+      font-size: small;
+      margin-left: 0.25rem;
+    }
+    .id:before {
+      content: '[';
+    }
+    .id:after {
+      content: ']';
+    }
+
+    button {
+      margin-top: -0.5rem;
+    }
+  }
+}

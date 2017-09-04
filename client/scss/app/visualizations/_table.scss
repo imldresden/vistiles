@@ -1,0 +1,42 @@
+#tableContainer {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+#dataTable {
+  will-change: transform;
+  border-collapse: separate; /* materialize sets this to collapse which destroys the borders when we translate() */
+
+  th, td {
+    border: 1px solid #DDDDDD;
+  }
+
+  .sortedAsc:after {
+    content: "\25B2";
+  }
+
+  .sortedDesc:after {
+    content: "\25BC";
+  }
+
+  .dragOver {
+    border-left: 3px solid black !important;
+  }
+}
+
+.whiteBackground {
+  background-color: white;
+}
+
+.filteredRegion {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.noSelect {
+  cursor: default;
+}

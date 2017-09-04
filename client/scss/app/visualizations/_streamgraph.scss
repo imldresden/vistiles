@@ -1,0 +1,74 @@
+.vis {
+  font-size: 12px;
+}
+
+.vis .plot-bg {
+  fill: color('grey', 'lighten-5');
+}
+
+.vis .stream {
+  fill: color('light-green', 'base');
+  opacity: .85;
+  stroke: color('grey', 'lighten-5');
+  stroke-width: 1;
+}
+
+.vis .stream.selected {
+  opacity: 1;
+}
+
+.vis .stream.not-selected {
+  opacity: 0.3;
+}
+
+.vis .stream.filtered {
+  fill: color('red', 'base');
+  stroke-dasharray: 4,2;
+}
+
+.axis > path,
+.axis > .tick > line {
+  shape-rendering: crispEdges;
+  stroke: color('grey', 'darken-4');
+}
+
+.vis .axis-grid > .tick > line {
+  opacity: .2;
+  stroke-dasharray: 4,2;
+}
+
+.axis > text,
+.axis > .tick > text {
+  fill: color('grey', 'darken-4');
+  font-size: 1em;
+}
+
+.axis #x-axis-label,
+.axis #y-axis-label {
+  font-size: 110%;
+}
+
+.button{
+  padding: 6px;
+  background: #26A96A;
+  color: white
+}
+
+.button.changeBaseline{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.button.changeBaseline .baselineLabel{
+  position: absolute;
+  color: black;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  padding: 0 6px;
+  top: -14px;
+  left: 0;
+}
+
+.ruler{
+}

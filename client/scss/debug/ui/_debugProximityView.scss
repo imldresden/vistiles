@@ -1,0 +1,18 @@
+#proximity-container {
+  min-width: 300px;
+  max-width: 600px;
+  min-height: 200px;
+
+  #proximity-view {
+    .bg {
+      fill: color('light-green', 'lighten-5');
+      stroke: color('light-green', 'darken-4');
+      stroke-width: 4;
+      shape-rendering: crispEdges;
+    }
+
+    .corner {
+      fill: color('blue', 'lighten-3');
+    }
+  }
+}

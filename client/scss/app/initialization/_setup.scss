@@ -1,0 +1,21 @@
+#deviceSelection, #deviceForm {
+  margin: 3rem auto;
+}
+
+#deviceForm {
+  .input-field {
+    width: 45%;
+    float: left;
+    &:nth-child(2n-1) {
+      margin-right: 6%;
+    }
+  }
+
+  fieldset {
+    width: 98%;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,7 @@
+build
+node_modules
+public/build
+server/config/local.json
+storage
+npm-debug.log
+.idea

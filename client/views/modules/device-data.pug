@@ -1,0 +1,37 @@
+//
+   Created by Tom Horak on 30.03.16.
+doctype html
+
+div
+  div
+    h4= strings.title
+    p= strings.info
+    form#deviceForm
+      div.input-field
+        label(for='name')= strings.fields.name
+        input#name.validate(type='text', required)
+      div.input-field
+        label(for='width')= strings.fields.width
+        input#width.validate(type='number', step='0.1', required)
+      div.input-field
+        label(for='height')= strings.fields.height
+        input#height.validate(type='number', step='0.1', required)
+      div.input-field
+        label(for='dpi')= strings.fields.dpi
+        input#dpi.validate(type='number', step='0.1', required)
+      div
+        label(for='borders')= strings.fields.borders
+        fieldset#borders
+          div.input-field
+            label(for='borderTop')= strings.fields.borderTop
+            input#borderTop.validate(type='number', step='0.1', required)
+          div.input-field
+            label(for='borderRight')= strings.fields.borderRight
+            input#borderRight.validate(type='number', step='0.1', required)
+          div.input-field
+            label(for='borderBottom')= strings.fields.borderBottom
+            input#borderBottom.validate(type='number', step='0.1', required)
+          div.input-field
+            label(for='borderLeft')= strings.fields.borderLeft
+            input#borderLeft.validate(type='number', step='0.1', required)
+      button#wizardButton.btn.waves-effect.waves-light(type='submit')= strings.fields.submit

@@ -1,0 +1,27 @@
+ul.list.collection {
+
+  margin: 0 0 1em 0;
+
+  .collection-item {
+    display: inline-block;
+    width: 100%;
+
+    .title {
+      display: block;
+    }
+
+    p {
+      display: inline-block;
+    }
+
+    button {
+      position: inherit !important;
+      float: right;
+    }
+
+    div > i.material-icons {
+      color: color('teal', 'lighten-1');
+      background-color: color('blue-grey', 'lighten-5');
+    }
+  }
+}

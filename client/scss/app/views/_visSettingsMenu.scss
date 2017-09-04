@@ -1,0 +1,105 @@
+.vis-settings-menu {
+  padding-top: 2em;
+  background-color: white;
+
+  ul.tabs {
+    overflow-x: hidden;
+  }
+
+  .noUi-handle {
+    transform: scale(2);
+  }
+
+  #tab-container > div {
+    padding-top: 2em;
+    width: 100%;
+    height: 100%;
+  }
+
+  #tab-default {
+    padding-top: 0 !important;
+  }
+
+  #tab-default, .tab-settings {
+    h6 {
+      font-weight: bold;
+      margin-top: 2.5em !important;
+    }
+  }
+
+  .tab-settings-checkerDiv {
+    Box-sizing: Border-box;
+    margin: 0.25em;
+    padding: 0;
+    position: relative;
+
+    .color {
+      height: 20px;
+      width: 20px;
+      border-radius: 10px;
+      position: absolute;
+      left: 30px;
+    }
+
+    [type="checkbox"]+label {
+      padding-left: 55px;
+      line-height: 22px;
+    }
+
+    &.switch {
+      margin-bottom: 0.6em;
+
+      label {
+        margin-left: -12px;
+      }
+    }
+
+    p {
+      color: black;
+      font-size: 14px;
+    }
+  }
+
+  .tab-settings-fieldset {
+    border: none;
+  }
+
+  .vis-settings-checkbox-wrapper {
+    height: 20em;
+    overflow-y: scroll;
+    position: relative;
+  }
+
+  .vis-settings-checkbox{
+    width: 20%;
+    position: relative;
+    left: auto;
+    right: auto;
+    visibility: visible;
+    display:inline-block;
+    vertical-align:middle;
+  }
+
+  .vis-settings-paragraph{
+    margin: auto;
+    padding: auto;
+    display: inline-block;
+    width: auto;
+  }
+
+  .time-slider-container {
+    padding-top: 5em;
+
+    .time-slider {
+    }
+
+    .time-slider + label {
+      top: 0;
+
+      .time-current-year {
+        font-size: 150%;
+        padding-left: .5em;
+      }
+    }
+  }
+}

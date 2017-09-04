@@ -1,0 +1,76 @@
+#deviceArea {
+  transform-origin: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1px solid color('grey', 'lighten-2');
+  border-radius: 2px;
+  background-color: color('grey', 'lighten-4');
+}
+
+#deviceAreaWrap {
+  width: 75%;
+  height: 100%;
+}
+
+.device {
+  background-color: color('blue-grey', 'base');
+  position: absolute;
+  border-radius: 2px;
+  border: solid thin color('blue-grey', 'darken-4');
+  cursor: move;
+
+  .name {
+    transform: scale3d(1, -1, 1);
+    text-align: center;
+    font-size: small;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .rotateHandler {
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    width: 8px;
+    height: 8px;
+    margin: -4px -4px;
+    border-radius: 8px;
+    background-color: color('teal', 'lighten-1');
+    cursor: pointer; // TODO: rotate cursor
+  }
+
+  .deviceCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin: -3px -3px;
+    border-radius: 6px;
+    background-color: color('red', 'darken-3');
+  }
+
+  .deviceCenter.virtual {
+    background-color: color('green', 'lighten-2');
+  }
+}
+
+.anchors {
+  transform-origin: center;
+  position: absolute;
+  border: 1px solid #f00;
+
+  .anchor {
+    transform-origin: center;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #f00;
+  }
+}

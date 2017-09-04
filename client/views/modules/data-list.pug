@@ -1,0 +1,28 @@
+//
+   Created by Tom Horak on 12.04.16.
+doctype html
+
+ul#data-list.collection.with-header
+  li.collection-header.avatar
+    div
+      i.material-icons.circle= visualization.icon
+      h5= visualization.name
+      span= strings.attributeSelect
+      span.bold= attribute.name
+      if attribute.optional
+        span= strings.attributeOptional
+  if attribute.optional
+    li.collection-item(id='data-SKIP')
+      div
+        button.secondary-content.btn(id='SKIP')
+          i.material-icons.right navigate_next
+          span= strings.items.skip
+        span.name.skip= strings.skip
+  each dataItem, id in dataItems
+    li.collection-item(id='data-' + id)
+      div
+        button.secondary-content.btn(id=id)
+          i.material-icons.right navigate_next
+          span= strings.items.next
+        span.name= dataItem['Name']
+        //span.type= dataItem['Definition'].slice(0, 50) + '...'

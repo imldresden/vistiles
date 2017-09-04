@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= strings.title
+
+    script(src="/static/lib/jquery/jquery-2.1.1.js")
+    script(src="/static/lib/materialize/js/bin/materialize.min.js")
+    script(src="/static/lib/d3/d3.min.js")
+    script(src="/build/js/debug.js")
+
+    link(rel='stylesheet', href='/build/css/debug.css')
+    link(rel='stylesheet', href='/static/lib/material-icons/material-icons.css')
+  body
+    #debugWrapper
+      #statusBar.valign-wrapper
+        .title
+          h1= name
+        ul.valign
+          li= strings.statusBar.ip + ipAddress[0]
+          li= strings.statusBar.port + port
+          li#server-status.active= strings.statusBar.serverActive
+          li#optitrack-status.inactive= strings.statusBar.optitrackInactive
+      #debugContent
+        aside#device-list
+          ul#device-list-ul.collection.with-header
+            li.collection-header
+              h5= strings.content.devices
+        //#contextArea
+        #deviceAreaWrap
+          #deviceArea
+    #proximity-container

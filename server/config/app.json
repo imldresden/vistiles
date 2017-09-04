@@ -1,0 +1,114 @@
+{
+  "app": {
+    "language": "en",
+    "workspaceColors": [
+      "blue",
+      "red",
+      "brown",
+      "purple",
+      "pink",
+      "orange"
+    ],
+    "proximity": {
+      "states": {
+        "near": 1,
+        "mid": 2
+      },
+      "thresholds": {
+        "near": {
+          "lower": 0.015,
+          "upper": 0.025
+        }
+      }
+    },
+    "logging": {
+      "serverLevel": "debug",
+      "clientLevel": "debug",
+      "streamClientLog": true
+    },
+    "detectDesktop": true,
+    "views": {
+      "barChart": {
+        "name": "Bar Chart",
+        "icon": "/static/img/icons/barchart.png",
+        "type": 1,
+        "characteristics": ["hasAxis", "d3"],
+        "attributes": {
+          "mandatory": ["Y-Axis"],
+          "optional": []
+        }
+      },
+      "scatterplot": {
+        "name": "Scatterplot",
+        "icon": "/static/img/icons/scatterplot.png",
+        "type": 1,
+        "characteristics": ["hasAxis", "d3"],
+        "attributes": {
+          "mandatory": ["X-Axis", "Y-Axis"],
+          "optional": ["Size"]
+        }
+      },
+      "table": {
+        "name": "Table",
+        "icon": "/static/img/icons/table.png",
+        "type": 1,
+        "characteristics": [],
+        "attributes": {
+          "mandatory": [],
+          "optional": []
+        }
+      },
+      "parallelCoordinates": {
+        "name": "Parallel Coordinates",
+        "icon": "/static/img/icons/pc.png",
+        "type": 1,
+        "characteristics": ["hasAxis", "d3"],
+        "attributes": {
+          "mandatory": [],
+          "optional": []
+        }
+      },
+      "streamgraph": {
+        "name": "Streamgraph",
+        "icon": "/static/img/icons/stream.png",
+        "type": 1,
+        "characteristics": ["time-based", "hasAxis", "d3"],
+        "attributes": {
+          "mandatory": ["Y-Axis"],
+          "optional": []
+        }
+      },
+      "lineChart": {
+        "name": "Line Chart",
+        "icon": "/static/img/icons/linechart.png",
+        "type": 1,
+        "characteristics": ["time-based", "hasAxis", "d3"],
+        "attributes": {
+          "mandatory": ["Y-Axis"],
+          "optional": []
+        }
+      },
+      "visSettingsMenu": {
+        "name": "Options Menu",
+        "icon": "/static/img/icons/option-menu.png",
+        "type": 2,
+        "characteristics": []
+      }
+    },
+    "ui": {
+      "combinationMenu": {
+        "visualizationAlignment": "align.png",
+        "lineChartBarChartCombination": "filter.png",
+        "barChartDisplayExtension": "extend.png",
+        "scatterPlotChartCombination": "filter.png",
+        "tableChartCombination": "filter.png",
+        "parallelCoordinatesChartCombination": "filter.png",
+        "parallelCoordinatesStreamgraphCombination": "filter.png",
+        "streamgraphBarChartCombination": "indicator.png",
+        "settingsMenuForVis": "settings.png",
+        "cloneViewCombination": "clone.png",
+        "lineChartStreamgraphCombination": "filter.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+#menuDiv {
+  position: fixed;
+  width: auto;
+  height: auto;
+  right: 0;
+  top: 0;
+  z-index: 950;
+}
+
+#syncIcon {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  .toggle {
+    opacity: 0.75;
+  }
+
+  &.active {
+    .toggle {
+      opacity: 1;
+    }
+  }
+}

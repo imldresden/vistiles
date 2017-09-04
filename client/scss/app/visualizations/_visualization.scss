@@ -1,0 +1,82 @@
+#visualizationDiv {
+  font-size: 12px;
+}
+
+#visMenu {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 2px;
+  left: 2px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  li {
+    margin-right: 5px;
+
+    &.checkbox-li {
+      margin: 10px;
+      text-transform: uppercase;
+      label { font-size: 1em; }
+    }
+
+    &.icon-li {
+      margin-right: 20px;
+    }
+  }
+
+  .view-icon {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
+}
+
+.axis {
+  path,
+  line {
+    fill: none;
+    opacity: 0.3;
+    stroke: #a8a8a8;
+  }
+}
+
+.tick {
+  text { opacity: 0.6; }
+  line { opacity: 0.1; }
+
+  &.highlighted {
+    line {
+      opacity: 0.8;
+      stroke-width: 2px;
+      stroke: #000;
+    }
+  }
+}
+
+.year-grid-line {
+  stroke: steelblue;
+  stroke-width: 10;
+  opacity: 0.2;
+  transition: opacity 0.5s ease;
+
+  &.dragging { opacity: 0.8; }
+}
+
+.year-grid-line-handler {
+  stroke: black;
+  stroke-width: 30;
+  visibility: hidden;
+  pointer-events: painted;
+}
+
+.year-indicator {
+  .drag-handler {
+    &:hover { cursor: pointer; }
+  }
+}

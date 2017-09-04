@@ -1,0 +1,26 @@
+{
+  "Country": {
+    "csvName": "Code",
+    "type": "TEXT"
+  },
+  "Name": {
+    "csvName": "Short Name",
+    "type": "TEXT"
+  },
+  "FullName": {
+    "csvName": "Long Name",
+    "type": "TEXT"
+  },
+  "IncomeGroup": {
+    "csvName": "Income Group",
+    "type": "TEXT"
+  },
+  "Region": {
+    "csvName": "Region",
+    "type": "TEXT"
+  },
+  "Currency": {
+    "csvName": "Currency Unit",
+    "type": "TEXT"
+  }
+}

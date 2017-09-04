@@ -1,0 +1,40 @@
+.barChart {
+  .chart-area {
+    fill: color('grey', 'lighten-5');
+  }
+
+  .bar {
+    fill: color('green', 'base');
+    opacity: 0.85;
+
+    &.selected {
+      stroke: color('grey', 'darken-4');
+      stroke-width: 1.5;
+    }
+  }
+
+  .axis {
+    path, .tick line {
+      shape-rendering: crispEdges;
+      stroke: color('grey', 'darken-4');
+    }
+
+    text {
+      fill: color('grey', 'darken-4');
+      font-size: 1em;
+    }
+    &.x-axis > .tick > text,
+    &.x-axis-grid > .tick > text {
+      display: none;
+    }
+
+    &.x-axis.labels > .tick > text {
+      display: inherit;
+    }
+
+    #x-axis-label, #y-axis-label {
+      font-size: 110%;
+    }
+  }
+
+}

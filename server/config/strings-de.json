@@ -1,0 +1,138 @@
+{
+  "strings": {
+    "name": "VisTiles",
+    "controller": {
+      "groups": {
+        "created": "Joined the brand-new {0} group.",
+        "joined": "Joined the {0} group.",
+        "left": "Left the {0} group."
+      },
+      "requestFullScreen": {
+        "title": "Full Screen Mode",
+        "info": "Everything is better in full screen.",
+        "button": "Launch full screen"
+      },
+      "lostConnection": {
+        "title": "Connection lost",
+        "info": "Could not reach the server anymore."
+      }
+    },
+    "initialization": {
+      "loadDeviceData": "Load device data form...",
+      "deviceDataMissingFields": "Please fill out all fields!",
+      "requestConnection": "Connect to server...",
+      "requestPairing": "Request pairing...",
+      "pairingInfo": "Move the device to complete pairing...",
+      "pairingFail": "Pairing failed",
+      "pairingSuccess": "Pairing successful!",
+      "pairingRetry": "Retry"
+    },
+    "ui": {
+      "loadAvailableViews": "Loading available views...",
+      "loadAvailableData": "Loading available data..."
+    },
+    "views": {
+      "debug": {
+        "title": "VisTiles Debug View",
+        "statusBar": {
+          "ip": "IP: ",
+          "port": "Port: ",
+          "serverActive": "Server: reachable",
+          "serverInactive": "Server: unreachable",
+          "optitrackActive": "Optitrack: active",
+          "optitrackInactive": "Optitrack: inactive"
+        },
+        "content": {
+          "devices": "Devices"
+        }
+      },
+      "index": {
+        "title": "Dashboard",
+        "branding": "VisTiles by IMLD",
+        "loading": {
+          "title": "Loading...",
+          "info": "Init application",
+          "button": ""
+        }
+      },
+      "modules": {
+        "data-list": {
+          "title": "Available Data",
+          "attributeSelect": "Select Attribute for ",
+          "attributeOptional": " (Optional)",
+          "loadingInfo": "Loading data...",
+          "error": "No available dataset",
+          "skip": "Skip Attribute",
+          "items": {
+            "type": "Type: ",
+            "size": "Size: ",
+            "next": "Next",
+            "skip": "Skip"
+          }
+        },
+        "device-data": {
+          "title": "Enter your devices data",
+          "fields": {
+            "name": "Name",
+            "width": "Width (cm)",
+            "height": "Height (cm)",
+            "dpi": "Resolution (PPI)",
+            "borders": "Borders",
+            "borderTop": "Border Top",
+            "borderRight": "Border Right",
+            "borderBottom": "Border Bottom",
+            "borderLeft": "Border Left",
+            "submit": "Save"
+          }
+        },
+        "device-list": {
+          "simulate": "Simulate"
+        },
+        "device-selection": {
+          "title": "Hey, who are you?",
+          "info": "Please tell us what device this is.",
+          "selectionLabel": "Choose a Device",
+          "submit": "Next"
+        },
+        "visualization-list": {
+          "title": "Available Visualizations",
+          "titleOtherViews": "Other available views",
+          "loadingInfo": "Loading available visualizations...",
+          "loadingVis": "Loading visualization...",
+          "items": {
+            "info": "Visual Variables: ",
+            "next": "Next"
+          }
+        },
+        "pairing-menu": {
+          "title": "Welcome!",
+          "infoPart1": "This ",
+          "infoPart2": " is currently not paired.",
+          "startPairing": "Start Pairing",
+          "simulate": "Simulate"
+        },
+        "visualizationMenu": {
+          "buttons": {
+            "clearSelection": "Auswahl aufheben",
+            "resetZoom": "Zoomstufe zurücksetzen",
+            "swapBaseline": "Grundlinie wechseln"
+          },
+          "checkboxes": {
+            "freezeObjectSize": "Objektgrößen einfrieren"
+          }
+        },
+        "visSettingsMenu": {
+          "titleTabDataMapping": "Data Mapping",
+          "titleTabSettings": "Settings",
+          "settings": {
+            "labelTimeSlider": "Select a specific year:",
+            "selectValueNode": "None"
+          }
+        },
+        "toasts": {
+          "attributeChanged": "Attribute \"{0}\" changed to \"{1}\""
+        }
+      }
+    }
+  }
+}

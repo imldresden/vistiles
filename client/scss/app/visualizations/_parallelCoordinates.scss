@@ -1,0 +1,50 @@
+.vis {
+  font-size: 12px;
+}
+
+.vis .plot-bg {
+  fill: color('grey', 'lighten-5');
+}
+
+.axis > path,
+.axis > .tick > line {
+  shape-rendering: crispEdges;
+  stroke: color('grey', 'darken-4');
+}
+
+.axis .button{
+  font-size: 1.8em;
+}
+
+.vis .line{
+  fill: none;
+  stroke: color('light-green', 'lighten-1');
+  stroke-width: 2;
+  opacity: 0.5;
+}
+
+.vis .line.selected{
+  stroke-width: 4;
+  opacity: 1;
+}
+
+.vis .line.not-selected{
+  stroke: color('grey', 'lighten-2');
+}
+
+vis .line.hide{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.vis .brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.vis .brush .resize rect{
+  visibility: visible !important;
+  fill: rgba(0,0,0,0.4);
+  transform: scaleY(4);
+}

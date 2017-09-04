@@ -1,0 +1,43 @@
+
+doctype html
+
+div#tile-setup-container.container
+  div#list-of-techniques.row
+    div.col.s12
+      h4 Tile Setup
+      p 1. Please select a visualization technique or view from the list.
+    each viewId in viewsVis
+      div.vis.col.s4.m2
+        button.vis-tech-button(data-view-id=views[viewId].id)
+          img.responsive-img(src=views[viewId].config.icon)
+          span.name= views[viewId].config.name
+    each viewId in viewsOther
+      div.view.col.s4.m2
+        button(data-view-id=views[viewId].id)
+          img.responsive-img(src=views[viewId].config.icon)
+          span.name= views[viewId].config.name
+  div.row
+    div.col.s12
+      div.divider
+      p 2. Please select data dimensions to adjust the data mapping (visual encoding).
+    div#list-of-dimensions.col.s8.m11
+      p#mapping-message
+        span.grey-text.text-lighten-1
+          i.material-icons error_outline
+          .
+            &nbsp;No data dimensions available yet.
+    div.start-container.col.s4.m1.center-align
+      a#start-button.btn-floating.btn-large.disabled.blue.lighten-1
+        i.large.material-icons play_arrow
+      span.grey-text.text-lighten-1 Start
+  div.row
+    div.col.s12
+      div.divider
+      p 3. Please select a year.
+    div.col.s12
+      div#time-slider-container.input-field.col.s12
+        p#time-message
+          span.grey-text.text-lighten-1
+            i.material-icons error_outline
+            .
+              &nbsp;No time selection available yet.

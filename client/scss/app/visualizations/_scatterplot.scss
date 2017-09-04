@@ -1,0 +1,46 @@
+.vis {
+  .plot-bg {
+    fill: color('grey', 'lighten-5');
+  }
+
+  .dot {
+    fill: color('light-green', 'base');
+    stroke: color('light-green', 'darken-4');
+    stroke-width: 1;
+    opacity: .85;
+
+    &.selected {
+      stroke: color('grey', 'darken-4');
+      stroke-width: 3;
+    }
+
+    &.filtered {
+      fill: color('red', 'base');
+      stroke-dasharray: 4,2;
+    }
+  }
+
+  .axis {
+    > path,
+    > .tick > line {
+      shape-rendering: crispEdges;
+      stroke: color('grey', 'darken-4');
+    }
+
+    > text,
+    > .tick > text {
+      fill: color('grey', 'darken-4');
+      font-size: 1em;
+    }
+
+    #x-axis-label,
+    #y-axis-label {
+      font-size: 110%;
+    }
+  }
+
+  .axis-grid > .tick > line {
+    opacity: .2;
+    stroke-dasharray: 4,2;
+  }
+}

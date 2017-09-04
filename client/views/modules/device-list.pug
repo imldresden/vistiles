@@ -1,0 +1,20 @@
+//
+   Created by Tom Horak on 12.04.16.
+doctype html
+
+each device, id in devices
+  li.collection-item(id=id)
+    div
+      if status == 'inactive'
+        i.material-icons.tiny.red-text cancel
+      else if status == 'active'
+        i.material-icons.tiny.green-text check_circle
+      else
+        i.material-icons.tiny.orange-text help
+      span= device.name
+      span.id= device.id.substring(0, 8) + '...'
+      if status == 'connecting'
+        button.secondary-content.btn(id='sim-' + id)= strings.simulate
+      else
+        span.id.secondary-content= device.rb.id
+        span.secondary-content= device.rb.name

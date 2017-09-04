@@ -1,0 +1,19 @@
+{
+  "system": {
+    "http": {
+      "localPort": 3000
+    },
+    "osc": {
+      "localAddress": "0.0.0.0",
+      "localPort": 5103
+    },
+    "tracking": {
+      "jitter": 0.00025,
+      "areaSize": {
+        "width": 120,
+        "height": 80
+      },
+      "intervalVirtualRigidBodies": 500
+    }
+  }
+}

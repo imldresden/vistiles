@@ -1,0 +1,28 @@
+.d3-tip {
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 7px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+
+  &:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 14px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.6);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: -11px;
+  }
+  &.no-arrow:after {
+    display: none;
+  }
+}

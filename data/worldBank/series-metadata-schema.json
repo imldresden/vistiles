@@ -1,0 +1,14 @@
+{
+  "Series": {
+    "csvName": "Code",
+    "type": "TEXT"
+  },
+  "Name": {
+    "csvName": "Indicator Name",
+    "type": "TEXT"
+  },
+  "Definition": {
+    "csvName": "Long definition",
+    "type": "TEXT"
+  }
+}

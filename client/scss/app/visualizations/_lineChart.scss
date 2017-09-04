@@ -1,0 +1,46 @@
+.line-chart {
+
+  .axis {
+    text {
+      fill: color('grey', 'darken-4');
+      font-size: 1.4em;
+    }
+  }
+
+  .chart-bg { fill: color('grey', 'lighten-5'); }
+
+  .value {
+    fill: steelblue;
+    transition: fill 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      stroke: color('grey', 'darken-4');
+      stroke-width: 3;
+    }
+  }
+
+  .country {
+    fill: none;
+    stroke: steelblue;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  :not(.selected-objects){
+    .country {
+      opacity: 0.4;
+
+      &:hover { opacity: 0.6; }
+    }
+  }
+
+  .selected-objects {
+    .country {
+      opacity: 0.2;
+
+      &:hover { opacity: 0.6; }
+      &.selected { opacity: 1; }
+    }
+  }
+}

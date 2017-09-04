@@ -1,0 +1,60 @@
+doctype html
+
+div(id=deviceId)
+  each vAttr, i in visAttr
+    div.row
+      div.input-field.col.s12
+        select(data-vis-attr=vAttr, data-attr=dataAttrMapping[i])
+          each attr, id in dataAttr
+            if (id == selectedAttr[dataAttrMapping[i]])
+              option(selected, value=id)= attr
+            else
+              option(value=id)= attr
+        label(for='')= vAttr
+  //- if visAttr.length == 0
+  //- TODO: add parallelCoordinates
+  if deviceViewIsTable
+    each vAttr, i in dataAttrMapping
+      div.row
+        div.input-field.col.s12
+          div.vis-settings-checkbox-wrapper
+            fieldset.tab-settings-fieldset
+              each attr, id in dataAttr
+                //- for the table selectedAttr contains the NOT SELECTED attributes
+                //- because by default everything is selected
+                //- this is because we don't want to sent all the attributes around all the time
+                if (selectedAttr[dataAttrMapping[i]].indexOf(id) > -1)
+                  input(type='checkbox', value=id, id=id)
+                else
+                  input(type='checkbox', value=id, id=id checked)
+                label(for=id)= attr
+                br
+  form(action='#')
+    div.row
+      div.time-slider-container.input-field.col.s12
+        div.time-slider(id='time-slider-' + deviceId)
+        label(for='time-slider-' + deviceId) Year
+          span.time-current-year(id='time-current-year-' + deviceId)
+    div.tab-settings
+      div.configuration
+        h6 Configuration
+        form(action='#')
+          fieldset.tab-settings-fieldset
+            div.tab-settings-checkerDiv.switch
+              label
+                input(type='checkbox', checked, disabled=).vis-settings-checkbox
+                span.lever
+                p.vis-settings-paragraph Hide Labels
+                br
+            div.tab-settings-checkerDiv.switch
+              label
+                input(type='checkbox', checked, disabled=).vis-settings-checkbox
+                span.lever
+                p.vis-settings-paragraph Enable Selection
+                br
+            div.tab-settings-checkerDiv.switch
+              label
+                input(type='checkbox', checked, disabled=).vis-settings-checkbox
+                span.lever
+                p.vis-settings-paragraph Freeze View
+                br

@@ -1,0 +1,16 @@
+//
+   Created by Tom Horak on 14.04.16.
+
+doctype html
+div.device(id='device-' + device.id, style='width:' + width + 'px;height:' + height + 'px;')
+  div.name= device.name
+  if(device.type == 'virtual')
+    div.rotateHandler(id='handler-' + device.id)
+    div.deviceCenter.virtual
+  else
+    div.deviceCenter
+div.anchors(id='anchors-' + device.id, style='width:' + width + 'px;height:' + height + 'px;')
+  div.top-left-anchor.anchor
+  div.top-right-anchor.anchor
+  div.bottom-left-anchor.anchor
+  div.bottom-right-anchor.anchor

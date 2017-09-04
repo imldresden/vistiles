@@ -1,0 +1,59 @@
+{
+  "events": {
+    "device": {
+      "initialized": "deviceInitialized"
+    },
+    "filter": {
+      "dataState": "filterDataState",
+      "displayExtension": "filterDisplayExtension",
+      "viewportState": "filterViewportState"
+    },
+    "workspace": {
+      "created": "workspaceCreated",
+      "joined": "workspaceJoined",
+      "joinedSilent": "workspaceJoinedSilent",
+      "create": "workspaceCreate",
+      "join": "workspaceJoin",
+      "left": "workspaceLeft",
+      "getAll": "getAll"
+    },
+    "subGroup": {
+      "created": "subGroupCreated",
+      "joined": "subGroupJoined",
+      "left": "subGroupLeft",
+      "hasLeft": "subGroupHasLeft",
+      "notPossible": "subGroupNotPossible"
+    },
+    "selection": {
+      "added": "selectionAdded",
+      "removed": "selectionRemoved",
+      "state": "selectionState"
+    },
+    "spatial": {
+      "linkAdded": "spatialLinkAdded",
+      "detailDomainReceived": "detailDomainReceived",
+      "overlayChanged": "overlayChanged",
+      "remoteDomainChange": "remoteDomainChange",
+      "remoteOverlayChange": "remoteOverlayChange"
+    },
+    "view": {
+      "loaded": "viewLoaded",
+      "forceLoad": "viewForceLoad",
+      "align": "viewAlign",
+      "aligned": "viewAligned"
+    },
+    "settings": {
+      "attributesState": "settingsAttributeState",
+      "attributesUpdate": "settingsAttributeUpdate"
+    },
+    "combinationMenu": {
+      "trigger": "triggerCombinationMenu",
+      "remove": "removeCombinationMenu",
+      "toggle": "toggleCombinationMenu"
+    },
+    "combination": {
+      "trigger": "triggerCombination",
+      "triggered": "triggeredCombination"
+    }
+  }
+}
