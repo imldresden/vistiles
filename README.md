@@ -1,3 +1,7 @@
+> **⚠ WARNING:**<br>
+> The code in this project is no longer maintained.
+> Use it with caution and check for vulnerabilities!
+
 # VisTiles
 
 The VisTiles prototype illustrates how multiple mobile devices can be combined
